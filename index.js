@@ -20,9 +20,9 @@ class Circle {
         return this.circumference = Math.PI * this.diameter
     }
 
-    // set area(radius){
-    //     this.area = Math.PI * radius * radius
-    // }
+    set area(z){
+        this.radius = Math.sqrt(z/Math.PI)
+    }
 
     get area(){
         return this.area = Math.PI * this.radius * this.radius
