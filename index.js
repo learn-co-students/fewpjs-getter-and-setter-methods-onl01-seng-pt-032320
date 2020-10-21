@@ -5,26 +5,26 @@ class Circle {
     }
 
     set diameter(x){
-        this._radius = x/2
+        this.radius = x/2
     }
 
     get diameter(){
-        return this._radius * 2
+        return this.radius * 2
     }
 
-    // set circumference(y){
-    //     this._radius = Math.PI * radius 
-    // }
+    set circumference(y){
+        this.diameter = y /  Math.PI
+    }
 
-    // get circumference(){
-    //     return this._circumference 
-    // }
+    get circumference(){
+        return this.circumference = Math.PI * this.diameter
+    }
 
     // set area(radius){
     //     this.area = Math.PI * radius * radius
     // }
 
-    // get area(){
-    //     return this.area
-    // }
+    get area(){
+        return this.area = Math.PI * this.radius * this.radius
+    }
 }
